@@ -1,0 +1,48 @@
+title of repository : dradio-app_on_firefox
+
+These 2 files start firefox and play the Deutschlandradio audio app.
+This has been tested with current debian 10.3, 
+mate 1.20.4, X Server xorg (1:7.7+19), firefox-esr 68.5.0esr (64-Bit)
+The theme has an influence on the window size due to the thickness of the window frame. 
+I tested successfully with mate theme TraditionalGreen.
+
+A switch -debug on position 1 may be set in the calling *.desktop file
+
+The script uses executables from these packages:
+bash: /bin/bash
+coreutils: /bin/date
+coreutils: /bin/echo
+procps: /bin/kill
+coreutils: /bin/sleep
+bc: /usr/bin/bc
+wmctrl: /usr/bin/wmctrl
+x11-utils: /usr/bin/xprop
+x11-utils: /usr/bin/xwininfo
+firefox-esr: /usr/lib/firefox-esr/firefox-esr
+||/ Name           Version             Architektur  Beschreibung
++++-==============-===================-============-============================================================
+ii  bash           5.0-4               amd64        GNU Bourne Again SHell
+ii  bc             1.07.1-2+b1         amd64        GNU bc arbitrary precision calculator language
+ii  coreutils      8.30-3              amd64        GNU core utilities
+ii  firefox-esr    68.5.0esr-1~deb10u1 amd64        Mozilla Firefox web browser - Extended Support Release (ESR)
+ii  procps         2:3.3.15-2          amd64        /proc file system utilities
+ii  wmctrl         1.07-7+b1           amd64        control an EWMH/NetWM compatible X Window Manager
+ii  x11-utils      7.7+4               amd64        X11 utilities
+
+Your mileage may vary with other packages, reports are welcome. 
+It is advisable to allow audio play for the website in the browsers preference setting. 
+see preferences-foto*.png
+It ist advisable to adjust #geometry settings, if your desktop shows a different layout.
+see browser_foto*.png
+
+bugs : 
+
+dradio.bash:
+1. The syntax of the script may be improved forever.
+2. When killing an existing firefox-window, the new window might start with two tabs of dradio
+
+dradio.firefox-esr.desktop
+1. Strings in other languages than 'de' and 'en' are open to improvement.
+Please supply a correct string in your mother language, if you know a better one.
+
+An install and remove script is supplied
