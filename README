@@ -46,3 +46,5 @@ dradio.firefox-esr.desktop
 Please supply a correct string in your mother language, if you know a better one.
 
 An install and remove script is supplied maybe later
+My script is for a dual monitor hardware setup.
+change your geometry in dradio.conf.
